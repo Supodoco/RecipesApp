@@ -8,11 +8,10 @@
 import Foundation
 
 struct Recipe: Decodable {
-    let id: String
-    let name: String
-    let source: String
-    let calories: Int
-    let instructions: String
+    let id, name, image, instructions: String
+    let calories, fat, carbs, protein, cooktime: Int
     let ingredients: [String]
-    let tags: [String]
 }
+
+typealias Recipes = [Recipe]
+
