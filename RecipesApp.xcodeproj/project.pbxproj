@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C4103F8F29153C0D00C39A7F /* FetcherData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetcherData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4103F8F29153C0D00C39A7F /* RecipesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4103F9229153C0D00C39A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4103F9429153C0D00C39A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4103F9929153C0D00C39A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		C4103F8629153C0D00C39A7F = {
 			isa = PBXGroup;
 			children = (
-				C4103F9129153C0D00C39A7F /* FetcherData */,
+				C4103F9129153C0D00C39A7F /* RecipesApp */,
 				C4103F9029153C0D00C39A7F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,12 +60,12 @@
 		C4103F9029153C0D00C39A7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4103F8F29153C0D00C39A7F /* FetcherData.app */,
+				C4103F8F29153C0D00C39A7F /* RecipesApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4103F9129153C0D00C39A7F /* FetcherData */ = {
+		C4103F9129153C0D00C39A7F /* RecipesApp */ = {
 			isa = PBXGroup;
 			children = (
 				C4103FAA2915416E00C39A7F /* App */,
@@ -76,9 +76,8 @@
 				C4103F9829153C0D00C39A7F /* Main.storyboard */,
 				C4103F9D29153C0E00C39A7F /* LaunchScreen.storyboard */,
 				C4103F9B29153C0E00C39A7F /* Assets.xcassets */,
-				C4103FA029153C0E00C39A7F /* Info.plist */,
 			);
-			path = FetcherData;
+			path = RecipesApp;
 			sourceTree = "<group>";
 		};
 		C4103FA82915415300C39A7F /* Models */ = {
@@ -103,6 +102,7 @@
 			children = (
 				C4103F9229153C0D00C39A7F /* AppDelegate.swift */,
 				C4103F9429153C0D00C39A7F /* SceneDelegate.swift */,
+				C4103FA029153C0E00C39A7F /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4103F8E29153C0D00C39A7F /* FetcherData */ = {
+		C4103F8E29153C0D00C39A7F /* RecipesApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4103FA329153C0E00C39A7F /* Build configuration list for PBXNativeTarget "FetcherData" */;
+			buildConfigurationList = C4103FA329153C0E00C39A7F /* Build configuration list for PBXNativeTarget "RecipesApp" */;
 			buildPhases = (
 				C4103F8B29153C0D00C39A7F /* Sources */,
 				C4103F8C29153C0D00C39A7F /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = FetcherData;
+			name = RecipesApp;
 			productName = FetcherData;
-			productReference = C4103F8F29153C0D00C39A7F /* FetcherData.app */;
+			productReference = C4103F8F29153C0D00C39A7F /* RecipesApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4103F8A29153C0D00C39A7F /* Build configuration list for PBXProject "FetcherData" */;
+			buildConfigurationList = C4103F8A29153C0D00C39A7F /* Build configuration list for PBXProject "RecipesApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4103F8E29153C0D00C39A7F /* FetcherData */,
+				C4103F8E29153C0D00C39A7F /* RecipesApp */,
 			);
 		};
 /* End PBXProject section */
@@ -280,10 +280,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RecipesApp/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = RecipesApp;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -334,9 +336,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RecipesApp/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = RecipesApp;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -353,18 +357,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8AP3BS5F75;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FetcherData/Info.plist;
+				INFOPLIST_FILE = RecipesApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kuchmar.FetcherData";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kuchmar.RecipesApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -381,18 +384,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8AP3BS5F75;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FetcherData/Info.plist;
+				INFOPLIST_FILE = RecipesApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kuchmar.FetcherData";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kuchmar.RecipesApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -403,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4103F8A29153C0D00C39A7F /* Build configuration list for PBXProject "FetcherData" */ = {
+		C4103F8A29153C0D00C39A7F /* Build configuration list for PBXProject "RecipesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4103FA129153C0E00C39A7F /* Debug */,
@@ -412,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4103FA329153C0E00C39A7F /* Build configuration list for PBXNativeTarget "FetcherData" */ = {
+		C4103FA329153C0E00C39A7F /* Build configuration list for PBXNativeTarget "RecipesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4103FA429153C0E00C39A7F /* Debug */,
