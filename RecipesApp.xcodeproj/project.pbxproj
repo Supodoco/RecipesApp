@@ -17,8 +17,8 @@
 		C43F6525291971BD005B6867 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F6524291971BD005B6867 /* NetworkManager.swift */; };
 		C43F65282919B511005B6867 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F65272919B511005B6867 /* RecipeTableViewCell.swift */; };
 		C43F652B291A813A005B6867 /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F652A291A813A005B6867 /* RecipeInfoViewController.swift */; };
-		C43F652D291A8234005B6867 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F652C291A8233005B6867 /* Enums.swift */; };
 		C43F652F291A82F6005B6867 /* NutritionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F652E291A82F6005B6867 /* NutritionTableViewCell.swift */; };
+		C43F6532291FD262005B6867 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C43F6531291FD262005B6867 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,6 @@
 		C43F6524291971BD005B6867 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C43F65272919B511005B6867 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		C43F652A291A813A005B6867 /* RecipeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInfoViewController.swift; sourceTree = "<group>"; };
-		C43F652C291A8233005B6867 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		C43F652E291A82F6005B6867 /* NutritionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43F6532291FD262005B6867 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				C43F6524291971BD005B6867 /* NetworkManager.swift */,
-				C43F652C291A8233005B6867 /* Enums.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -141,6 +140,9 @@
 			dependencies = (
 			);
 			name = RecipesApp;
+			packageProductDependencies = (
+				C43F6531291FD262005B6867 /* Alamofire */,
+			);
 			productName = FetcherData;
 			productReference = C4103F8F29153C0D00C39A7F /* RecipesApp.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +171,9 @@
 				Base,
 			);
 			mainGroup = C4103F8629153C0D00C39A7F;
+			packageReferences = (
+				C43F6530291FD262005B6867 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C4103F9029153C0D00C39A7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,7 +208,6 @@
 				C43F652F291A82F6005B6867 /* NutritionTableViewCell.swift in Sources */,
 				C4103F9329153C0D00C39A7F /* AppDelegate.swift in Sources */,
 				C4103F9529153C0D00C39A7F /* SceneDelegate.swift in Sources */,
-				C43F652D291A8234005B6867 /* Enums.swift in Sources */,
 				C4103FA729153C3800C39A7F /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C43F6530291FD262005B6867 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C43F6531291FD262005B6867 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C43F6530291FD262005B6867 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4103F8729153C0D00C39A7F /* Project object */;
 }

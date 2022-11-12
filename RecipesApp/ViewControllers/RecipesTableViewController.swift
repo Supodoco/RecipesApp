@@ -48,12 +48,12 @@ extension RecipesTableViewController {
 // MARK: - FetchData
 extension RecipesTableViewController {
     private func fetchData() {
-        NetworkManager.shared.fetchRecipes { [unowned self] result in
+        NetworkManager.shared.fetchRecipes(from: Link.dataUrl.rawValue) { [unowned self] result in
             switch result {
             case .success(let recipes):
                 self.recipes = recipes
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
             }
             DispatchQueue.main.async {
                 self.tableView.reloadData()

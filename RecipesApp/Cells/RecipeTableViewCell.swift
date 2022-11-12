@@ -24,12 +24,12 @@ class RecipeTableViewCell: UITableViewCell {
         recipeImage.contentMode = .scaleAspectFill
         recipeImage.clipsToBounds = true
         
-        NetworkManager.shared.fetchImage(from: recipe.image) { [weak self] result in
+        NetworkManager.shared.fetchData(from: recipe.image) { [unowned self] result in
             switch result {
             case .success(let imageData):
-                self?.recipeImage.image = UIImage(data: imageData)
+                recipeImage.image = UIImage(data: imageData)
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
             }
         }
     }
